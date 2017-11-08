@@ -1,0 +1,7 @@
+<div #control class="row justify-content-md-center sstoneControl" >
+    <div class="col" style="text-align: center;">
+        <input #testInput type="text" [disabled]="isDisabled" (keyup)="onKey(testInput.value)">
+        <p>And your value is {{value}}</p>
+    </div>
+</div>
+

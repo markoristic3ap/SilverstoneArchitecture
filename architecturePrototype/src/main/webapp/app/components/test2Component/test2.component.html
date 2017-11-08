@@ -1,0 +1,8 @@
+<div #control class="row justify-content-md-center sstoneControl" >
+    <div class="col" style="text-align: center;">
+        <h1 style="font-size: 12px; font-weight: bold;">I'm a second custom component</h1>
+        <input #testInput type="checkbox" [disabled]="isDisabled" (change)="handleChange(testInput.checked)">
+        <p>And your value is {{value}}</p>
+    </div>
+</div>
+

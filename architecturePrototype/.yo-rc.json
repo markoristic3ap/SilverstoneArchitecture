@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "ch.aaap.silverstone",
+      "nativeLanguage": "de"
+    },
+    "jhipsterVersion": "4.10.2",
+    "baseName": "Silverstone",
+    "packageName": "ch.aaap.silverstone",
+    "packageFolder": "ch/aaap/silverstone",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "hazelcast",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "cdc597b2649a96e34276d4ba8a8493f883a885ed",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "gateway",
+    "testFrameworks": [
+      "cucumber",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "de",
+    "languages": [
+      "de",
+      "en",
+      "fr",
+      "it"
+    ]
+  }
+}
