@@ -1,0 +1,7 @@
+<div #control class="row justify-content-md-center sstoneControl" >
+    <div class="col" style="text-align: center;">
+        <h1 style="font-size: 12px; font-weight: bold;">I'm a date component</h1>
+        <input #testInput type="date" [disabled]="isDisabled" (change)="handleChange(testInput.value)">
+        <p>And your value is {{value}}</p>
+    </div>
+</div>

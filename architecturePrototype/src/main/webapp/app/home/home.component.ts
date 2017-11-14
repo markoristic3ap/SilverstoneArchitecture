@@ -9,6 +9,7 @@ import {SilverstoneForm} from "../components/SilverstoneForm";
 import {SilverstoneFormControl} from "../components/SilverstoneFormControl";
 import {trueValidator} from "./true.validator";
 import {namelengthValidator} from "./string.length.validator";
+import {dateValidator} from "./date.validator";
 
 
 @Component({
@@ -43,22 +44,12 @@ export class HomeComponent extends SilverstoneForm implements OnInit {
         this.silverstoneForm = this._fb.group(
             {
                 "test1": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test2": new SilverstoneFormControl("", [trueValidator()]),
-                "test3": new SilverstoneFormControl("", [namelengthValidator()]),
+                "test2": new SilverstoneFormControl("", [dateValidator()]),
+                "test3": new SilverstoneFormControl("", [trueValidator()]),
                 "test4": new SilverstoneFormControl("", [namelengthValidator()]),
                 "test5": new SilverstoneFormControl("", [namelengthValidator()]),
                 "test6": new SilverstoneFormControl("", [namelengthValidator()]),
                 "test7": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test8": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test9": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test10": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test11": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test12": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test13": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test14": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test15": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test16": new SilverstoneFormControl("", [namelengthValidator()]),
-                "test17": new SilverstoneFormControl("", [namelengthValidator()]),
             }
         );
 
@@ -71,10 +62,9 @@ export class HomeComponent extends SilverstoneForm implements OnInit {
         this.silverstoneForm.controls.test1.valueChanges.subscribe( data => {
             console.log("Data", data);
         });
-
-        this.silverstoneForm.controls.test2.valueChanges.do((data) => {
-        }).subscribe();
-
+        this.silverstoneForm.controls.test2.valueChanges.subscribe((data) => {
+            console.log("Date", data)
+        });
         this.silverstoneForm.controls.test3.valueChanges.do((data) => {
         }).subscribe();
 
