@@ -1,7 +1,24 @@
 <div #control class="row justify-content-md-center sstoneControl" >
-    <div class="col" style="text-align: center;">
-        <input #testInput type="text" [disabled]="isDisabled" (keyup)="onKey(testInput.value)">
-        <p>And your value is {{value}}</p>
+    <div class="col">
+        <div class="row p-2">
+            <div class="col-3">
+                Question nr.
+            </div>
+            <div class="col-7">
+                Component title
+            </div>
+            <div class="col-2 text-right">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-9 push-3">
+                <div class="form-group">
+                    <input #testInput class="sstoneInput" type="text" [disabled]="isDisabled" (keyup)="onKey(testInput.value)">
+                </div>
+                <p>And your value is {{value}}</p>
+            </div>
+        </div>
     </div>
 </div>
 

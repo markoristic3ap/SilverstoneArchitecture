@@ -1,3 +1,26 @@
+// This should be moved to upper level -->
+//define the color set
+$text-color: white;
+$bg-color: #009999;
+//remove the outline on form elements
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+// <-- This should be moved to upper level
+
 .sstoneControl {
     border: 4px solid green;
     box-sizing: border-box;
@@ -21,5 +44,14 @@ input.ng-pristine.ng-invalid {
     -webkit-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow:none;
+}
+
+.sstoneInput {
+    width: 100%;
+    height: 60px;
+    color: $text-color;
+    background: $bg-color;
+    border: none;
+    padding: 10px;
 }
 
